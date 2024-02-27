@@ -15,7 +15,7 @@ public class MenuCifrado {
 		
 		Scanner t = new Scanner(System.in);
 				
-		int opcion;
+		String opcion;
 		
 		SODetector detector = new SODetector();
 		
@@ -28,32 +28,32 @@ public class MenuCifrado {
 			System.out.println("=============================");
 			System.out.println("=  1) Servidor              =");
 			System.out.println("=  2) Cliente               =");
-			System.out.println("=  2) Servidor y Cliente    =");
+			System.out.println("=  3) Servidor y Cliente    =");
 			System.out.println("=  0) Salir                 =");
 			System.out.println("=============================");
 			
 			System.out.println("Introduzca una opcion");
 			
-			opcion = t.nextInt();
+			opcion = t.nextLine();
 			
 			switch (opcion) {
 			
-			case 0: 
+			case "0": 
 				System.out.println("Adios!!");
 				t.close();
 				System.gc();
 				System.exit(0);
 				break;
 				
-			case 1: 
+			case "1": 
 				iniciar(sistema, 1);
 				break;
 				
-			case 2: 
+			case "2": 
 				iniciar(sistema, 2);
 				break;
 			
-			case 3: 
+			case "3": 
 				iniciar(sistema, 1);
 				iniciar(sistema, 2);
 				break;
@@ -62,7 +62,7 @@ public class MenuCifrado {
 				System.out.println("Introduce un valor válido");
 			}
 			
-		} while (opcion != 0);
+		} while (opcion != "0");
 	}
 	
 	private static void iniciar(String _sistema, int _dist) {

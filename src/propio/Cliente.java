@@ -23,11 +23,6 @@ public class Cliente {
         
         final String[] Simbols = {"y", "@", "#", "$", "w", "^", "&", "*", "(", ")", "-", "_", "=", "+",
                 "{", "}", "[", "]", ":", ";", "<", ">", ",", ".", "?", "0"};
-
-
-        System.out.println(ABECEDARIO.length);
-        System.out.println(Nums.length);
-        System.out.println(Simbols.length);
         
         if(_op.equalsIgnoreCase("1")) {
 
